@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="Gutenberg" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73K-Nz-EV5">
+                        <rect key="frame" x="5" y="5" width="128" height="210"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRs-Jt-NNj">
+                                <rect key="frame" x="5" y="5" width="118" height="143"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="bs6-gE-JjI">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="143"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bs6-gE-JjI" firstAttribute="top" secondItem="QRs-Jt-NNj" secondAttribute="top" id="E4m-E3-D6W"/>
+                                    <constraint firstItem="bs6-gE-JjI" firstAttribute="leading" secondItem="QRs-Jt-NNj" secondAttribute="leading" id="MzK-R7-9n0"/>
+                                    <constraint firstAttribute="bottom" secondItem="bs6-gE-JjI" secondAttribute="bottom" id="XA4-zm-71s"/>
+                                    <constraint firstAttribute="trailing" secondItem="bs6-gE-JjI" secondAttribute="trailing" id="uzp-Al-TVZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao7-Th-0TB">
+                                <rect key="frame" x="0.0" y="156" width="128" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-nu-pBt">
+                                <rect key="frame" x="0.0" y="181.5" width="128" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nPc-nu-pBt" secondAttribute="bottom" constant="8" id="1Ok-Vn-WhO"/>
+                            <constraint firstItem="nPc-nu-pBt" firstAttribute="leading" secondItem="73K-Nz-EV5" secondAttribute="leading" id="4hd-3o-AHD"/>
+                            <constraint firstAttribute="trailing" secondItem="ao7-Th-0TB" secondAttribute="trailing" id="ACJ-5u-Q3r"/>
+                            <constraint firstItem="ao7-Th-0TB" firstAttribute="top" secondItem="QRs-Jt-NNj" secondAttribute="bottom" constant="8" id="H8L-BI-rmq"/>
+                            <constraint firstAttribute="trailing" secondItem="nPc-nu-pBt" secondAttribute="trailing" id="Jnl-PM-oR9"/>
+                            <constraint firstAttribute="trailing" secondItem="QRs-Jt-NNj" secondAttribute="trailing" constant="5" id="V8k-T5-5Ak"/>
+                            <constraint firstItem="QRs-Jt-NNj" firstAttribute="top" secondItem="73K-Nz-EV5" secondAttribute="top" constant="5" id="YRL-3v-Clr"/>
+                            <constraint firstItem="QRs-Jt-NNj" firstAttribute="leading" secondItem="73K-Nz-EV5" secondAttribute="leading" constant="5" id="ggM-Ah-ysE"/>
+                            <constraint firstItem="ao7-Th-0TB" firstAttribute="leading" secondItem="73K-Nz-EV5" secondAttribute="leading" id="lNq-Yf-1kp"/>
+                            <constraint firstItem="nPc-nu-pBt" firstAttribute="top" secondItem="ao7-Th-0TB" secondAttribute="bottom" constant="5" id="zgN-Hl-gHM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="73K-Nz-EV5" secondAttribute="trailing" constant="5" id="96I-8H-f2P"/>
+                <constraint firstAttribute="bottom" secondItem="73K-Nz-EV5" secondAttribute="bottom" constant="5" id="Izt-xe-B1R"/>
+                <constraint firstItem="73K-Nz-EV5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="dhY-vi-iHD"/>
+                <constraint firstItem="73K-Nz-EV5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="u2T-zs-2Jv"/>
+            </constraints>
+            <size key="customSize" width="138" height="220"/>
+            <connections>
+                <outlet property="bookAuthorLbl" destination="nPc-nu-pBt" id="B14-z6-ezN"/>
+                <outlet property="bookImageContainerView" destination="QRs-Jt-NNj" id="2WQ-ch-LHy"/>
+                <outlet property="bookImageView" destination="bs6-gE-JjI" id="Vch-7y-y2A"/>
+                <outlet property="bookTitleLbl" destination="ao7-Th-0TB" id="usv-7h-mLf"/>
+                <outlet property="containerView" destination="73K-Nz-EV5" id="Q2o-XR-RaD"/>
+            </connections>
+            <point key="canvasLocation" x="84.057971014492765" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderImage" width="1067" height="723"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

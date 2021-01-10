@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063D75AF72D250108189B05A /* Pods_Gutenberg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302C7D1E8ECA0F04030787C /* Pods_Gutenberg.framework */; };
+		1B33C8B525A9737600CB1D94 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33C8B425A9737600CB1D94 /* Rechability.swift */; };
+		1B33C8BA25A973BE00CB1D94 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33C8B925A973BE00CB1D94 /* BaseViewController.swift */; };
+		1B33C8EE25A98C6600CB1D94 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33C8EC25A98C6600CB1D94 /* BookCollectionViewCell.swift */; };
+		1B33C8EF25A98C6600CB1D94 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B33C8ED25A98C6600CB1D94 /* BookCollectionViewCell.xib */; };
+		1B33C8F425A9902000CB1D94 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33C8F325A9902000CB1D94 /* Book.swift */; };
+		1B33C8FF25A9FDB100CB1D94 /* BookListServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33C8FE25A9FDB100CB1D94 /* BookListServiceResponse.swift */; };
+		1B33C90825A9FF0E00CB1D94 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33C90725A9FF0E00CB1D94 /* BookListViewModel.swift */; };
+		1BB00F4225A8793400546530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F4125A8793400546530 /* AppDelegate.swift */; };
+		1BB00F4425A8793400546530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F4325A8793400546530 /* SceneDelegate.swift */; };
+		1BB00F4925A8793400546530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB00F4725A8793400546530 /* Main.storyboard */; };
+		1BB00F4B25A8793700546530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB00F4A25A8793700546530 /* Assets.xcassets */; };
+		1BB00F4E25A8793700546530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB00F4C25A8793700546530 /* LaunchScreen.storyboard */; };
+		1BB00F5925A8793800546530 /* GutenbergTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F5825A8793800546530 /* GutenbergTests.swift */; };
+		1BB00F6425A8793800546530 /* GutenbergUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F6325A8793800546530 /* GutenbergUITests.swift */; };
+		1BB00F8325A87D0700546530 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F8225A87D0700546530 /* HomeViewController.swift */; };
+		1BB00F8B25A880CF00546530 /* BooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F8A25A880CF00546530 /* BooksListViewController.swift */; };
+		1BB00F9625A8816D00546530 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00F9525A8816D00546530 /* Constants.swift */; };
+		1BB00FC625A8838F00546530 /* Apis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00FC525A8838F00546530 /* Apis.swift */; };
+		1BB00FCB25A883A300546530 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00FCA25A883A300546530 /* NetworkService.swift */; };
+		1BB00FF225A8968B00546530 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BB00FF125A8968B00546530 /* Localizable.strings */; };
+		1BB00FFB25A89A8700546530 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB00FFA25A89A8700546530 /* UIColor.swift */; };
+		1BB0102D25A89CDC00546530 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0102C25A89CDC00546530 /* Font.swift */; };
+		1BB0103225A89DFE00546530 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0103125A89DFE00546530 /* Color.swift */; };
+		1BB0104C25A8A30600546530 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103925A8A30500546530 /* Montserrat-Light.ttf */; };
+		1BB0104D25A8A30600546530 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103A25A8A30500546530 /* Montserrat-LightItalic.ttf */; };
+		1BB0104E25A8A30600546530 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103B25A8A30500546530 /* Montserrat-ExtraLightItalic.ttf */; };
+		1BB0104F25A8A30600546530 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103C25A8A30500546530 /* Montserrat-BlackItalic.ttf */; };
+		1BB0105025A8A30600546530 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103D25A8A30500546530 /* Montserrat-Bold.ttf */; };
+		1BB0105125A8A30600546530 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103E25A8A30500546530 /* Montserrat-MediumItalic.ttf */; };
+		1BB0105225A8A30600546530 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0103F25A8A30500546530 /* Montserrat-Italic.ttf */; };
+		1BB0105325A8A30600546530 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104025A8A30500546530 /* Montserrat-ThinItalic.ttf */; };
+		1BB0105425A8A30600546530 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104125A8A30500546530 /* Montserrat-ExtraBold.ttf */; };
+		1BB0105525A8A30600546530 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104225A8A30500546530 /* Montserrat-SemiBoldItalic.ttf */; };
+		1BB0105625A8A30600546530 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104325A8A30500546530 /* OFL.txt */; };
+		1BB0105725A8A30600546530 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104425A8A30600546530 /* Montserrat-BoldItalic.ttf */; };
+		1BB0105825A8A30600546530 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104525A8A30600546530 /* Montserrat-ExtraLight.ttf */; };
+		1BB0105925A8A30600546530 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104625A8A30600546530 /* Montserrat-ExtraBoldItalic.ttf */; };
+		1BB0105A25A8A30600546530 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104725A8A30600546530 /* Montserrat-Medium.ttf */; };
+		1BB0105B25A8A30600546530 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104825A8A30600546530 /* Montserrat-Regular.ttf */; };
+		1BB0105C25A8A30600546530 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104925A8A30600546530 /* Montserrat-SemiBold.ttf */; };
+		1BB0105D25A8A30600546530 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104A25A8A30600546530 /* Montserrat-Thin.ttf */; };
+		1BB0105E25A8A30600546530 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0104B25A8A30600546530 /* Montserrat-Black.ttf */; };
+		1BB0107825A9516600546530 /* BookCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0107725A9516600546530 /* BookCategory.swift */; };
+		1BB0107F25A9547200546530 /* BookCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0107D25A9547200546530 /* BookCategoryTableViewCell.swift */; };
+		1BB0108025A9547200546530 /* BookCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0107E25A9547200546530 /* BookCategoryTableViewCell.xib */; };
+		77A79CFD284CDAD4B0358C24 /* Pods_Gutenberg_GutenbergUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B48BB4FA665E2E8944951FB /* Pods_Gutenberg_GutenbergUITests.framework */; };
+		AA832855C95D3740078A2AB4 /* Pods_GutenbergTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B738E8D4D0F5AA2C1B519C0 /* Pods_GutenbergTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BB00F5525A8793800546530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BB00F3625A8793300546530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BB00F3D25A8793300546530;
+			remoteInfo = Gutenberg;
+		};
+		1BB00F6025A8793800546530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BB00F3625A8793300546530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BB00F3D25A8793300546530;
+			remoteInfo = Gutenberg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07359EECC3D86C27BC1FCB87 /* Pods-GutenbergTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergTests.release.xcconfig"; path = "Target Support Files/Pods-GutenbergTests/Pods-GutenbergTests.release.xcconfig"; sourceTree = "<group>"; };
+		0AE03BE3138357EEF363CF03 /* Pods-Gutenberg-GutenbergUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gutenberg-GutenbergUITests.release.xcconfig"; path = "Target Support Files/Pods-Gutenberg-GutenbergUITests/Pods-Gutenberg-GutenbergUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B33C8B425A9737600CB1D94 /* Rechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
+		1B33C8B925A973BE00CB1D94 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B33C8EC25A98C6600CB1D94 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B33C8ED25A98C6600CB1D94 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
+		1B33C8F325A9902000CB1D94 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1B33C8FE25A9FDB100CB1D94 /* BookListServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListServiceResponse.swift; sourceTree = "<group>"; };
+		1B33C90725A9FF0E00CB1D94 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
+		1BB00F3E25A8793400546530 /* Gutenberg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gutenberg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB00F4125A8793400546530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BB00F4325A8793400546530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1BB00F4825A8793400546530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BB00F4A25A8793700546530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BB00F4D25A8793700546530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BB00F4F25A8793700546530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB00F5425A8793800546530 /* GutenbergTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB00F5825A8793800546530 /* GutenbergTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergTests.swift; sourceTree = "<group>"; };
+		1BB00F5A25A8793800546530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB00F5F25A8793800546530 /* GutenbergUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GutenbergUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB00F6325A8793800546530 /* GutenbergUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergUITests.swift; sourceTree = "<group>"; };
+		1BB00F6525A8793800546530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB00F8225A87D0700546530 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1BB00F8A25A880CF00546530 /* BooksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewController.swift; sourceTree = "<group>"; };
+		1BB00F9525A8816D00546530 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1BB00FC525A8838F00546530 /* Apis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apis.swift; sourceTree = "<group>"; };
+		1BB00FCA25A883A300546530 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1BB00FF125A8968B00546530 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1BB00FFA25A89A8700546530 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1BB0102C25A89CDC00546530 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1BB0103125A89DFE00546530 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1BB0103925A8A30500546530 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		1BB0103A25A8A30500546530 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		1BB0103B25A8A30500546530 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		1BB0103C25A8A30500546530 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1BB0103D25A8A30500546530 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		1BB0103E25A8A30500546530 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1BB0103F25A8A30500546530 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		1BB0104025A8A30500546530 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		1BB0104125A8A30500546530 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1BB0104225A8A30500546530 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		1BB0104325A8A30500546530 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1BB0104425A8A30600546530 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1BB0104525A8A30600546530 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1BB0104625A8A30600546530 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1BB0104725A8A30600546530 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		1BB0104825A8A30600546530 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		1BB0104925A8A30600546530 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		1BB0104A25A8A30600546530 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		1BB0104B25A8A30600546530 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		1BB0107725A9516600546530 /* BookCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCategory.swift; sourceTree = "<group>"; };
+		1BB0107D25A9547200546530 /* BookCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1BB0107E25A9547200546530 /* BookCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		24547160E289F02B976F8947 /* Pods-Gutenberg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gutenberg.release.xcconfig"; path = "Target Support Files/Pods-Gutenberg/Pods-Gutenberg.release.xcconfig"; sourceTree = "<group>"; };
+		3B48BB4FA665E2E8944951FB /* Pods_Gutenberg_GutenbergUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gutenberg_GutenbergUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48FA71DBE4F4506D524FBCFC /* Pods-GutenbergTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GutenbergTests.debug.xcconfig"; path = "Target Support Files/Pods-GutenbergTests/Pods-GutenbergTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71A4ECDC25FA81430D1488E5 /* Pods-Gutenberg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gutenberg.debug.xcconfig"; path = "Target Support Files/Pods-Gutenberg/Pods-Gutenberg.debug.xcconfig"; sourceTree = "<group>"; };
+		9B738E8D4D0F5AA2C1B519C0 /* Pods_GutenbergTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GutenbergTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE10E0930A55355AE6C31C80 /* Pods-Gutenberg-GutenbergUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gutenberg-GutenbergUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gutenberg-GutenbergUITests/Pods-Gutenberg-GutenbergUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D302C7D1E8ECA0F04030787C /* Pods_Gutenberg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gutenberg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BB00F3B25A8793300546530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063D75AF72D250108189B05A /* Pods_Gutenberg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB00F5125A8793800546530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA832855C95D3740078A2AB4 /* Pods_GutenbergTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB00F5C25A8793800546530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A79CFD284CDAD4B0358C24 /* Pods_Gutenberg_GutenbergUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B33C8DF25A98C2800CB1D94 /* CustomCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1B33C8E025A98C3900CB1D94 /* BookCollectionViewCell */,
+			);
+			path = CustomCollectionViewCells;
+			sourceTree = "<group>";
+		};
+		1B33C8E025A98C3900CB1D94 /* BookCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B33C8EC25A98C6600CB1D94 /* BookCollectionViewCell.swift */,
+				1B33C8ED25A98C6600CB1D94 /* BookCollectionViewCell.xib */,
+			);
+			path = BookCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1B33C90625A9FEEA00CB1D94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B33C90725A9FF0E00CB1D94 /* BookListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1BB00F3525A8793300546530 = {
+			isa = PBXGroup;
+			children = (
+				1BB00F4025A8793400546530 /* Gutenberg */,
+				1BB00F5725A8793800546530 /* GutenbergTests */,
+				1BB00F6225A8793800546530 /* GutenbergUITests */,
+				1BB00F3F25A8793400546530 /* Products */,
+				B91A1D297D9253B27D445B6B /* Pods */,
+				A0ACF0266CF186A42D95A0EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BB00F3F25A8793400546530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F3E25A8793400546530 /* Gutenberg.app */,
+				1BB00F5425A8793800546530 /* GutenbergTests.xctest */,
+				1BB00F5F25A8793800546530 /* GutenbergUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BB00F4025A8793400546530 /* Gutenberg */ = {
+			isa = PBXGroup;
+			children = (
+				1B33C90625A9FEEA00CB1D94 /* ViewModel */,
+				1BB00FC425A8837400546530 /* NetworkManager */,
+				1BB00F9425A8815200546530 /* CommonFiles */,
+				1BB00F9325A8814500546530 /* Images */,
+				1BB00F9025A8810B00546530 /* Views */,
+				1BB00F8F25A8810100546530 /* Models */,
+				1BB00F8125A87CCA00546530 /* Controllers */,
+			);
+			path = Gutenberg;
+			sourceTree = "<group>";
+		};
+		1BB00F5725A8793800546530 /* GutenbergTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F5825A8793800546530 /* GutenbergTests.swift */,
+				1BB00F5A25A8793800546530 /* Info.plist */,
+			);
+			path = GutenbergTests;
+			sourceTree = "<group>";
+		};
+		1BB00F6225A8793800546530 /* GutenbergUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F6325A8793800546530 /* GutenbergUITests.swift */,
+				1BB00F6525A8793800546530 /* Info.plist */,
+			);
+			path = GutenbergUITests;
+			sourceTree = "<group>";
+		};
+		1BB00F8125A87CCA00546530 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F8225A87D0700546530 /* HomeViewController.swift */,
+				1BB00F8A25A880CF00546530 /* BooksListViewController.swift */,
+				1B33C8B925A973BE00CB1D94 /* BaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1BB00F8F25A8810100546530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0107725A9516600546530 /* BookCategory.swift */,
+				1B33C8F325A9902000CB1D94 /* Book.swift */,
+				1B33C8FE25A9FDB100CB1D94 /* BookListServiceResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1BB00F9025A8810B00546530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B33C8DF25A98C2800CB1D94 /* CustomCollectionViewCells */,
+				1BB0107C25A9544A00546530 /* CustomTableViewCells */,
+				1BB00F9225A8812900546530 /* LaunchScreen */,
+				1BB00F9125A8811100546530 /* Stoyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1BB00F9125A8811100546530 /* Stoyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F4725A8793400546530 /* Main.storyboard */,
+			);
+			path = Stoyboards;
+			sourceTree = "<group>";
+		};
+		1BB00F9225A8812900546530 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F4C25A8793700546530 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		1BB00F9325A8814500546530 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F4A25A8793700546530 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1BB00F9425A8815200546530 /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00FF925A89A7100546530 /* Extensions */,
+				1BB00FF025A8961900546530 /* Localization */,
+				1BB00FCF25A886E100546530 /* Fonts */,
+				1BB00FC325A8836000546530 /* Delegate */,
+				1BB00F4F25A8793700546530 /* Info.plist */,
+				1BB00F9525A8816D00546530 /* Constants.swift */,
+				1BB0103125A89DFE00546530 /* Color.swift */,
+				1B33C8B425A9737600CB1D94 /* Rechability.swift */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
+		1BB00FC325A8836000546530 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00F4125A8793400546530 /* AppDelegate.swift */,
+				1BB00F4325A8793400546530 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		1BB00FC425A8837400546530 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00FC525A8838F00546530 /* Apis.swift */,
+				1BB00FCA25A883A300546530 /* NetworkService.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		1BB00FCF25A886E100546530 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0100225A89BD600546530 /* Montserrat */,
+				1BB0102C25A89CDC00546530 /* Font.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1BB00FF025A8961900546530 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00FF125A8968B00546530 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		1BB00FF925A89A7100546530 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BB00FFA25A89A8700546530 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1BB0100225A89BD600546530 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0104B25A8A30600546530 /* Montserrat-Black.ttf */,
+				1BB0103C25A8A30500546530 /* Montserrat-BlackItalic.ttf */,
+				1BB0103D25A8A30500546530 /* Montserrat-Bold.ttf */,
+				1BB0104425A8A30600546530 /* Montserrat-BoldItalic.ttf */,
+				1BB0104125A8A30500546530 /* Montserrat-ExtraBold.ttf */,
+				1BB0104625A8A30600546530 /* Montserrat-ExtraBoldItalic.ttf */,
+				1BB0104525A8A30600546530 /* Montserrat-ExtraLight.ttf */,
+				1BB0103B25A8A30500546530 /* Montserrat-ExtraLightItalic.ttf */,
+				1BB0103F25A8A30500546530 /* Montserrat-Italic.ttf */,
+				1BB0103925A8A30500546530 /* Montserrat-Light.ttf */,
+				1BB0103A25A8A30500546530 /* Montserrat-LightItalic.ttf */,
+				1BB0104725A8A30600546530 /* Montserrat-Medium.ttf */,
+				1BB0103E25A8A30500546530 /* Montserrat-MediumItalic.ttf */,
+				1BB0104825A8A30600546530 /* Montserrat-Regular.ttf */,
+				1BB0104925A8A30600546530 /* Montserrat-SemiBold.ttf */,
+				1BB0104225A8A30500546530 /* Montserrat-SemiBoldItalic.ttf */,
+				1BB0104A25A8A30600546530 /* Montserrat-Thin.ttf */,
+				1BB0104025A8A30500546530 /* Montserrat-ThinItalic.ttf */,
+				1BB0104325A8A30500546530 /* OFL.txt */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		1BB0107C25A9544A00546530 /* CustomTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0108725A9547700546530 /* BookCategoryTableViewCell */,
+			);
+			path = CustomTableViewCells;
+			sourceTree = "<group>";
+		};
+		1BB0108725A9547700546530 /* BookCategoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0107D25A9547200546530 /* BookCategoryTableViewCell.swift */,
+				1BB0107E25A9547200546530 /* BookCategoryTableViewCell.xib */,
+			);
+			path = BookCategoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		A0ACF0266CF186A42D95A0EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D302C7D1E8ECA0F04030787C /* Pods_Gutenberg.framework */,
+				3B48BB4FA665E2E8944951FB /* Pods_Gutenberg_GutenbergUITests.framework */,
+				9B738E8D4D0F5AA2C1B519C0 /* Pods_GutenbergTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91A1D297D9253B27D445B6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71A4ECDC25FA81430D1488E5 /* Pods-Gutenberg.debug.xcconfig */,
+				24547160E289F02B976F8947 /* Pods-Gutenberg.release.xcconfig */,
+				AE10E0930A55355AE6C31C80 /* Pods-Gutenberg-GutenbergUITests.debug.xcconfig */,
+				0AE03BE3138357EEF363CF03 /* Pods-Gutenberg-GutenbergUITests.release.xcconfig */,
+				48FA71DBE4F4506D524FBCFC /* Pods-GutenbergTests.debug.xcconfig */,
+				07359EECC3D86C27BC1FCB87 /* Pods-GutenbergTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BB00F3D25A8793300546530 /* Gutenberg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB00F6825A8793800546530 /* Build configuration list for PBXNativeTarget "Gutenberg" */;
+			buildPhases = (
+				572089F9DF4FBB27833B1D79 /* [CP] Check Pods Manifest.lock */,
+				1BB00F3A25A8793300546530 /* Sources */,
+				1BB00F3B25A8793300546530 /* Frameworks */,
+				1BB00F3C25A8793300546530 /* Resources */,
+				B55A3969338C3E0BAF6A3E8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gutenberg;
+			productName = Gutenberg;
+			productReference = 1BB00F3E25A8793400546530 /* Gutenberg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BB00F5325A8793800546530 /* GutenbergTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB00F6B25A8793800546530 /* Build configuration list for PBXNativeTarget "GutenbergTests" */;
+			buildPhases = (
+				2B5F5C7211DA1F3BF0A6C320 /* [CP] Check Pods Manifest.lock */,
+				1BB00F5025A8793800546530 /* Sources */,
+				1BB00F5125A8793800546530 /* Frameworks */,
+				1BB00F5225A8793800546530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BB00F5625A8793800546530 /* PBXTargetDependency */,
+			);
+			name = GutenbergTests;
+			productName = GutenbergTests;
+			productReference = 1BB00F5425A8793800546530 /* GutenbergTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BB00F5E25A8793800546530 /* GutenbergUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB00F6E25A8793800546530 /* Build configuration list for PBXNativeTarget "GutenbergUITests" */;
+			buildPhases = (
+				2035F6FFEE5A7B40CCB12A0C /* [CP] Check Pods Manifest.lock */,
+				1BB00F5B25A8793800546530 /* Sources */,
+				1BB00F5C25A8793800546530 /* Frameworks */,
+				1BB00F5D25A8793800546530 /* Resources */,
+				A91E2CB4E8B12C6C0D9AED8F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BB00F6125A8793800546530 /* PBXTargetDependency */,
+			);
+			name = GutenbergUITests;
+			productName = GutenbergUITests;
+			productReference = 1BB00F5F25A8793800546530 /* GutenbergUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BB00F3625A8793300546530 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1BB00F3D25A8793300546530 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1BB00F5325A8793800546530 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1BB00F3D25A8793300546530;
+					};
+					1BB00F5E25A8793800546530 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1BB00F3D25A8793300546530;
+					};
+				};
+			};
+			buildConfigurationList = 1BB00F3925A8793300546530 /* Build configuration list for PBXProject "Gutenberg" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BB00F3525A8793300546530;
+			productRefGroup = 1BB00F3F25A8793400546530 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BB00F3D25A8793300546530 /* Gutenberg */,
+				1BB00F5325A8793800546530 /* GutenbergTests */,
+				1BB00F5E25A8793800546530 /* GutenbergUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BB00F3C25A8793300546530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB0105625A8A30600546530 /* OFL.txt in Resources */,
+				1BB0105825A8A30600546530 /* Montserrat-ExtraLight.ttf in Resources */,
+				1BB0108025A9547200546530 /* BookCategoryTableViewCell.xib in Resources */,
+				1BB0105525A8A30600546530 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				1BB0105C25A8A30600546530 /* Montserrat-SemiBold.ttf in Resources */,
+				1BB0105125A8A30600546530 /* Montserrat-MediumItalic.ttf in Resources */,
+				1BB0104C25A8A30600546530 /* Montserrat-Light.ttf in Resources */,
+				1BB0105325A8A30600546530 /* Montserrat-ThinItalic.ttf in Resources */,
+				1BB0105225A8A30600546530 /* Montserrat-Italic.ttf in Resources */,
+				1B33C8EF25A98C6600CB1D94 /* BookCollectionViewCell.xib in Resources */,
+				1BB00F4E25A8793700546530 /* LaunchScreen.storyboard in Resources */,
+				1BB0105B25A8A30600546530 /* Montserrat-Regular.ttf in Resources */,
+				1BB0105E25A8A30600546530 /* Montserrat-Black.ttf in Resources */,
+				1BB0104D25A8A30600546530 /* Montserrat-LightItalic.ttf in Resources */,
+				1BB0105A25A8A30600546530 /* Montserrat-Medium.ttf in Resources */,
+				1BB0105925A8A30600546530 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				1BB0105725A8A30600546530 /* Montserrat-BoldItalic.ttf in Resources */,
+				1BB00FF225A8968B00546530 /* Localizable.strings in Resources */,
+				1BB00F4B25A8793700546530 /* Assets.xcassets in Resources */,
+				1BB0105425A8A30600546530 /* Montserrat-ExtraBold.ttf in Resources */,
+				1BB0105025A8A30600546530 /* Montserrat-Bold.ttf in Resources */,
+				1BB0105D25A8A30600546530 /* Montserrat-Thin.ttf in Resources */,
+				1BB0104F25A8A30600546530 /* Montserrat-BlackItalic.ttf in Resources */,
+				1BB00F4925A8793400546530 /* Main.storyboard in Resources */,
+				1BB0104E25A8A30600546530 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB00F5225A8793800546530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB00F5D25A8793800546530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2035F6FFEE5A7B40CCB12A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gutenberg-GutenbergUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B5F5C7211DA1F3BF0A6C320 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GutenbergTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		572089F9DF4FBB27833B1D79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gutenberg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91E2CB4E8B12C6C0D9AED8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gutenberg-GutenbergUITests/Pods-Gutenberg-GutenbergUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gutenberg-GutenbergUITests/Pods-Gutenberg-GutenbergUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gutenberg-GutenbergUITests/Pods-Gutenberg-GutenbergUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B55A3969338C3E0BAF6A3E8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gutenberg/Pods-Gutenberg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gutenberg/Pods-Gutenberg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gutenberg/Pods-Gutenberg-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BB00F3A25A8793300546530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B33C8F425A9902000CB1D94 /* Book.swift in Sources */,
+				1BB00FC625A8838F00546530 /* Apis.swift in Sources */,
+				1B33C8FF25A9FDB100CB1D94 /* BookListServiceResponse.swift in Sources */,
+				1BB00F9625A8816D00546530 /* Constants.swift in Sources */,
+				1B33C8B525A9737600CB1D94 /* Rechability.swift in Sources */,
+				1B33C90825A9FF0E00CB1D94 /* BookListViewModel.swift in Sources */,
+				1B33C8EE25A98C6600CB1D94 /* BookCollectionViewCell.swift in Sources */,
+				1BB00F4225A8793400546530 /* AppDelegate.swift in Sources */,
+				1BB0103225A89DFE00546530 /* Color.swift in Sources */,
+				1B33C8BA25A973BE00CB1D94 /* BaseViewController.swift in Sources */,
+				1BB00FCB25A883A300546530 /* NetworkService.swift in Sources */,
+				1BB00F8B25A880CF00546530 /* BooksListViewController.swift in Sources */,
+				1BB0102D25A89CDC00546530 /* Font.swift in Sources */,
+				1BB00FFB25A89A8700546530 /* UIColor.swift in Sources */,
+				1BB00F4425A8793400546530 /* SceneDelegate.swift in Sources */,
+				1BB0107825A9516600546530 /* BookCategory.swift in Sources */,
+				1BB0107F25A9547200546530 /* BookCategoryTableViewCell.swift in Sources */,
+				1BB00F8325A87D0700546530 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB00F5025A8793800546530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB00F5925A8793800546530 /* GutenbergTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB00F5B25A8793800546530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB00F6425A8793800546530 /* GutenbergUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BB00F5625A8793800546530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BB00F3D25A8793300546530 /* Gutenberg */;
+			targetProxy = 1BB00F5525A8793800546530 /* PBXContainerItemProxy */;
+		};
+		1BB00F6125A8793800546530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BB00F3D25A8793300546530 /* Gutenberg */;
+			targetProxy = 1BB00F6025A8793800546530 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BB00F4725A8793400546530 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BB00F4825A8793400546530 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BB00F4C25A8793700546530 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BB00F4D25A8793700546530 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BB00F6625A8793800546530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BB00F6725A8793800546530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BB00F6925A8793800546530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A4ECDC25FA81430D1488E5 /* Pods-Gutenberg.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gutenberg/CommonFiles/info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.Gutenberg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BB00F6A25A8793800546530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24547160E289F02B976F8947 /* Pods-Gutenberg.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gutenberg/CommonFiles/info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.Gutenberg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BB00F6C25A8793800546530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48FA71DBE4F4506D524FBCFC /* Pods-GutenbergTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GutenbergTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.GutenbergTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gutenberg.app/Gutenberg";
+			};
+			name = Debug;
+		};
+		1BB00F6D25A8793800546530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07359EECC3D86C27BC1FCB87 /* Pods-GutenbergTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GutenbergTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.GutenbergTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gutenberg.app/Gutenberg";
+			};
+			name = Release;
+		};
+		1BB00F6F25A8793800546530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE10E0930A55355AE6C31C80 /* Pods-Gutenberg-GutenbergUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GutenbergUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.GutenbergUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gutenberg;
+			};
+			name = Debug;
+		};
+		1BB00F7025A8793800546530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE03BE3138357EEF363CF03 /* Pods-Gutenberg-GutenbergUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GutenbergUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.GutenbergUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gutenberg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BB00F3925A8793300546530 /* Build configuration list for PBXProject "Gutenberg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB00F6625A8793800546530 /* Debug */,
+				1BB00F6725A8793800546530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BB00F6825A8793800546530 /* Build configuration list for PBXNativeTarget "Gutenberg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB00F6925A8793800546530 /* Debug */,
+				1BB00F6A25A8793800546530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BB00F6B25A8793800546530 /* Build configuration list for PBXNativeTarget "GutenbergTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB00F6C25A8793800546530 /* Debug */,
+				1BB00F6D25A8793800546530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BB00F6E25A8793800546530 /* Build configuration list for PBXNativeTarget "GutenbergUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB00F6F25A8793800546530 /* Debug */,
+				1BB00F7025A8793800546530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BB00F3625A8793300546530 /* Project object */;
+}

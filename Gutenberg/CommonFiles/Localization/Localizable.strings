@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Gutenberg
+
+  Created by Sagar Dhake on 10/01/21.
+  
+*/
+
+"APP_NAME" = "Guntenberg";
+
+"NO_INTERNET_MESSAGE" = "Please connect to internet";
+
+"HOME_VIEW_APP_NAME" = "Guntenberg Project";
+
+"PROJECT_DESCRIPTION" = "A social cataloging website that allows you to freely search its database of books, annotations and reviews";
